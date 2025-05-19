@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        width: 1519px;
+        height: 2900px;
+        background-color: rgb(255, 255, 255);
+    }
+    .header{
+        width: 100%;
+        height: 90px;
+        border-bottom: 1px solid rgb(211, 210, 208);
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 0px 4px 0;
+    }
+    .yellow{
+        width: 300px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .ylo{
+        color: rgb(255, 213, 0);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+    }
+    .blk{
+        color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+
+    }
+    .menu{
+        width: 300px;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .menu h3{
+        margin-top: 33px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .menu a{
+        margin-top: 29px;
+    }
+    .food{
+        width: 100%;
+        height: 1200px;
+        font-weight: lighter;
+    }
+    .food h1{
+        text-align: center;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 90px;
+
+    }
+    .food h3{
+        margin-top: 20px;
+        text-align: center;
+        color: gray;
+    }
+    .food img{
+        margin-left: 112px;
+        margin-top: 20px;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0 06px 15px  rgba(0, 0, 0, 0.2) ;
+    }
+ .buttons{
+        text-align: center;
+        margin-top: 100px;
+    }
+    .del{
+        width: 160px;
+        height: 70px; 
+        background-color: rgb(255, 174, 0); 
+        color: azure; 
+        border: none; 
+        border-radius: 30px 30px 30px 30px; 
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .del:hover{
+        background-color: rgb(255, 119, 0);
+        transition: 0.3s;
+        zoom: 1.02;
+        margin-right: 5px;
+    }
+    .take{
+        width: 220px; 
+        height: 70px;
+        background-color: rgb(255, 174, 0); 
+        color: azure; 
+        border: none; 
+        border-radius: 30px 30px 30px 30px; 
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .take:hover{
+        background-color: rgb(255, 119, 0);
+        transition: 0.3s;
+        zoom: 1.02;
+        margin-left: 5px;
+    }
+    
+    .dish{
+        width: 100%;
+        height: 400px;
+        background-color: rgb(251, 249, 249);
+        margin-top: 30px;
+        
+    }
+    .images{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .images img{
+        margin-top: 60px;
+        cursor: pointer;
+        transition: 1s;
+    }
+    .text h3:hover{
+        color: black;
+    }
+    .text h3{
+        margin-top: 30px;
+        color: rgb(90, 86, 86);
+        cursor: pointer;
+    }
+    .text img:hover{
+        zoom: 1.03;
+        
+    }
+    .tttt{
+        width: 1300px;
+        margin: auto;
+    }
+    .zoompic{
+        width: 100%;
+        height: 1100px;
+    }
+    .explore{
+        width: 100%;
+        height: 150px;
+        text-align: center;
+        font-size: 50px;
+        color: rgb(12, 12, 12);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding-top: 150px;
+    }
+    .bigimg{
+        width: 100%;
+        height: 750px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .bigimg img{
+        margin-top: 25px;
+        transition: 0.3s;
+        cursor: pointer;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 4px 4px 4px 0px;
+    }
+    .bigimg img:hover{
+        width: 440px;
+        height: 650px;
+    }
+    .foot{
+        width: 100%;
+        height: 70px;
+        background-color: rgb(59, 57, 57);
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+</style>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="yellow">
+                <h2 class="ylo">YELLOW</h2>
+                <h2 class="blk">KITCHEN</h2>
+            </div>
+            <div class="menu">
+                <h3>Log in</h3>
+                <h3>Cart (0)</h3>
+                <a href="yellowkitchen.html"><img src="img/menu_20dp_000000_FILL0_wght400_GRAD0_opsz20.svg" width="30px"></a>
+            </div>
+        </div>
+        <div class="food">
+            <h1>Your Food Court At Home</h1>
+            <div class="buttons">
+                <button class="del">Delivery<br>Order In</button>
+                <button class="take">Takeout<br>Grab and Go</button>
+            </div>
+            <img src="img/banner.jpg" width="1300px">
+            <h3>Fresh Salad, ll Pasifigo</h3>
+        </div>
+        <div class="dish">
+            <div class=" tttt owl-carousel owl-theme">
+                <div class="item"><img src="img/1.jpg" width="200" height="300"><h4>1</h4></div>
+                <div class="item"><img src="img/2.jpg" width="200"><h4>2</h4></div>
+                <div class="item"><img src="img/3.jpg" width="200"><h4>3</h4></div>
+                <div class="item"><img src="img/4.jpg" width="200"><h4>4</h4></div>
+                <div class="item"><img src="img/5.jpg" width="225"><h4>5</h4></div>
+                <div class="item"><img src="img/6.jpg" width="200"><h4>6</h4></div>
+                <div class="item"><img src="img/7.jpg" width="200"><h4>7</h4></div>
+            </div>
+
+            
+        </div>
+        <div class="zoompic">
+            <div class="explore">Explore Our Menu</div>
+            <div class="bigimg">
+                <img src="img/5.jpg" width="420px" height="630px">
+                <img src="img/5.jpg" width="420px" height="630px">
+                <img src="img/5.jpg" width="420px" height="630px">
+            </div>
+        </div>
+        <div class="foot">Copyright &#169 2020</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="    https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+        
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:true,
+responsive:{
+0:{
+    items:1
+},
+600:{
+    items:3
+},
+1000:{
+    items:5
+}
+}
+})
+    </script>
+</body>
+</html>
